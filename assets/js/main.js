@@ -34,19 +34,16 @@ function showPeople(people) {
     main.appendChild(peopleEl)
     });
 };
-
-// form.addEventListener("submit", (e) => {
-//     e.preventDefault()
-
-//     const searchP = search.value 
-
-//     if(searchP && searchP !== " "){
-//         getPeople(API_URL + searchP)
-//         search.value = " "
-//     }
-//     else{
-//         window.location.reload()
-//     }
-// })
-
-
+form.addEventListener("submit", (e) => {
+        e.preventDefault()
+    
+        const searchP = search.value 
+    
+        if(searchP && searchP !== " "){
+            getPeople(API_URL + searchP)
+            search.value = " "
+        }
+        else{
+            window.location.reload()
+        }
+    })
